@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "The JavaScript template",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "build": "rm -rf ./build && swc ./src -d ./build --copy-files --strip-leading-paths"
+  },
+  "devDependencies": {
+    "@swc/cli": "0.5.2",
+    "@swc/core": "1.10.6",
+    "@tsconfig/node20": "20.1.4",
+    "typescript": "5.7.2"
+  },
+  "keywords": [
+    "css",
+    "javascript"
+  ],
+  "dependencies": {
+    "express": "4.21.2",
+    "tsoa": "6.6.0"
+  }
+}

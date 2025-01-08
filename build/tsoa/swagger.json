@@ -1,0 +1,52 @@
+{
+	"openapi": "3.0.0",
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "javascript",
+		"version": "1.0.0",
+		"description": "The JavaScript template",
+		"contact": {}
+	},
+	"paths": {
+		"/test": {
+			"get": {
+				"operationId": "GetTest",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"test": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"test"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}
